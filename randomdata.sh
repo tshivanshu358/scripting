@@ -41,3 +41,7 @@ for i in $(seq 1 $num_files); do
   base64 /dev/urandom | head -c ${file_size_mb}M > $output_dir/text_$i.txt
 done
 
+## for binary file generation
+##dd if=/dev/urandom of=random_data.bin bs=1M count=10240
+
+
