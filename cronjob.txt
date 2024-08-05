@@ -1,0 +1,22 @@
+Here is how to integrate the modified script with a cron job :: 
+
+1. Open the crontab configuration by running:
+crontab -e
+
+2. Add the following line to the crontab file:
+0 20 * * * /path to your script.sh 
+
+(Replace /path to script.sh with the actual path of your script)
+The cron job entry 0 20 * * * specifies that the script will run at 20:00 (8:00 PM) every day.
+
+3. Save and exit the crontab editor.
+
+
+*    *    *    *    *  command to be executed
+-    -    -    -    -
+|    |    |    |    |
+|    |    |    |    +---- day of week (0 - 6) (Sunday=0)
+|    |    |    +--------- month (1 - 12)
+|    |    +-------------- day of month (1 - 31)
+|    +------------------- hour (0 - 23)
++------------------------ minute (0 - 59)
