@@ -1,0 +1,22 @@
+#!/bin/bash
+
+echo " Starting automated directory and file creation..."
+
+read -p "Enter number of main folders to create: " main_count
+
+for (( i=1; i<=main_count; i++ ))
+do
+    read -p "Enter name for folder #$i: " folder_name
+    mkdir -p "$folder_name"
+
+    read -p "Enter number of subfolders inside '$folder_name': " sub_count
+
+    for (( j=1; j<=sub_count; j++ ))
+    do
+        read -p "Enter name for subfolder #$j inside '$folder_name': " subfolder_name
+        subfolder_path="$folder_name/$subfolder_name"
+        mkdir -p "$subfolder_path"
+
+        echo " Created: $subfolder_path"
+    done
+done
