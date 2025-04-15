@@ -1,0 +1,23 @@
+# Log Monitoring Script
+
+## Description
+This script collects system logs from /var/log, analyzes them for common errors or warnings, and sends a notification to both an email and a Slack channel.
+
+## How It Works
+1. Copies all *.log files to a local analysis directory.
+2. Scans each log file for:
+   - ERROR
+   - WARNING
+   - CRITICAL
+   - FAIL
+3. Adds suggestions based on error content.
+4. Sends an email with analysis results.
+5. Posts a Slack message with a summary.
+
+## Setup Instructions
+- Replace `your-email@example.com` with your actual email address.
+- Make sure `mail` is configured on your system (e.g., `sudo apt install mailutils`).
+- Replace `SLACK_WEBHOOK_URL` with your actual Slack webhook URL.
+- Make the script executable:
+```bash
+chmod +x log_monitor.sh
