@@ -1,0 +1,16 @@
+#!/bin/bash
+
+amount=480
+target=100000
+daily_rate=1.05
+deduction=24
+day=1
+
+echo "Day | Amount"
+while (( $(echo "$amount < $target" | bc -l) )); do
+  printf "%3d | %.2f\n" "$day" "$amount"
+  amount=$(echo "$amount * $daily_rate - $deduction" | bc -l)
+  ((day++))
+done
+
+echo "It will take $((day-1)) days to reach ₹$target."
