@@ -22,3 +22,28 @@ Case statement scripts
 Loops (For/Do-While)
 Exist status
 Command line arguments
+
+Can you explain how shell scripting fits into a larger DevOps workflow?
+What is the need for shell scripts when there are automation tools to do the work?
+In what scenarios would you opt for shell script rather than programming languages like Python or Golang?
+How would you approach writing a shell script to automate a particular task?
+How to do static analysis for Shell script?
+How do you ensure that shell scripts are error-free in your CI/CD pipeline?
+How can you handle errors and exceptions in shell scripts?
+Shell script to reverse a string
+How do you pass secrets (tokens, passwords) into a shell script without printing them in the logs?
+Parse a log in the desired format and find all occurrences of a word
+Shell script to send the first ten lines of a file to another file.
+Merge(concatenate) two files and write the output to the third file.
+Find all duplicate strings in a file and replace them with another string
+Find all the IP addresses from a log file and write it to another file.
+Which shell options (e.g., set -euo pipefail) do you always enable, and why?
+How would you debug a shell script that isn't working correctly?
+What is the difference between a "for" loop and a "while" loop in shell scripting?
+Show how you would profile a slow shell loop that reads a 10 GB log.
+Describe one failure you saw in production caused by a shell script and how you fixed it.
+How do you keep a shell script readable when many people will maintain it later?
+Give one real example where a shell script solved a pain point faster than Terraform, Ansible, or Python.
+Give one method to run parts of a shell script in parallel and collect the results.
+How do you fetch only the latest 100 lines from a 2 GB log stored in S3 using Bash?
+What is your exit-code strategy? List three exit codes you standardise across all scripts and why.
